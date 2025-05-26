@@ -1,18 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
   Sparkles,
   MapPin,
   Phone,
   Mail,
-  Calendar,
   Clock,
   Users,
-  BookOpen,
-  ArrowRight,
-  CheckCircle
+  BookOpen
 } from "lucide-react";
 import SectionHeading from "../atom/section-heading";
 import { cn } from "@/lib/utils";
@@ -48,28 +43,7 @@ export function CTA() {
     }
   ];
 
-  const contactInfo = [
-    {
-      icon: <MapPin className="w-5 h-5" />,
-      label: "Address",
-      value: "123 Magical Learning Lane, Education City, EC 12345"
-    },
-    {
-      icon: <Phone className="w-5 h-5" />,
-      label: "Phone",
-      value: "(555) 123-MAGIC"
-    },
-    {
-      icon: <Mail className="w-5 h-5" />,
-      label: "Email",
-      value: "admissions@magicalschool.edu"
-    },
-    {
-      icon: <Clock className="w-5 h-5" />,
-      label: "Office Hours",
-      value: "Mon-Fri: 8AM-5PM"
-    }
-  ];
+
 
   return (
     <section className=" ">

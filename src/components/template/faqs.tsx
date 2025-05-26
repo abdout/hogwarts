@@ -14,7 +14,7 @@ export default function FAQs() {
                     <div className="divide-y divide-dashed sm:mx-auto sm:max-w-lg lg:mx-0">
                         <div className="pb-6">
                             <h3 className="font-medium">How do I get my Hogwarts letter?</h3>
-                            <p className="text-muted-foreground mt-4">Your Hogwarts letter will be delivered by owl post on your 11th birthday. If you haven't received it by then, please check with your local Ministry of Magic office.</p>
+                            <p className="text-muted-foreground mt-4">Your Hogwarts letter will be delivered by owl post on your 11th birthday. If you haven&apos;t received it by then, please check with your local Ministry of Magic office.</p>
 
                             <ol className="list-outside list-decimal space-y-2 pl-4">
                                 <li className="text-muted-foreground mt-4">Letters are automatically sent to all magical children on their birthday.</li>

@@ -131,7 +131,7 @@ export default function EventCard() {
               </div>
               <p className="text-neutral-700 dark:text-neutral-300 mb-2">
                 Hogwarts School of Witchcraft and Wizardry invites you to attend our Welcome Feast - 
-                where we'll present our magical curriculum, discuss the challenges ahead, and open dialogue about our shared journey in the wizarding world.
+                where we&apos;ll present our magical curriculum, discuss the challenges ahead, and open dialogue about our shared journey in the wizarding world.
               </p>
             </div>
           </div>

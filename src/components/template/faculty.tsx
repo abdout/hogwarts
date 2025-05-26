@@ -1,17 +1,11 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
   GraduationCap, 
   Award, 
   BookOpen, 
-  Users,
-  Star,
-  ChevronRight,
-  Mail,
-  Calendar
+  Users
 } from "lucide-react";
 import Image from "next/image";
 import SectionHeading from "../atom/section-heading";

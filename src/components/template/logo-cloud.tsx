@@ -34,7 +34,7 @@ export default function LogoCloud() {
                             
                             <div className="flex items-center">
                                 <span className="mx-auto text-lg font-bold text-black dark:text-white">
-                                    St. Mungo's Hospital
+                                    St. Mungo&apos;s Hospital
                                 </span>
                             </div>
                             
