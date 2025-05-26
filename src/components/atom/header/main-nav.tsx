@@ -1,14 +1,11 @@
 "use client"
 
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 
 import { siteConfig } from "@/config/site"
-import { cn } from "@/lib/utils"
 import { Icons } from "@/components/atom/header/icons"
 
 export function MainNav() {
-  const pathname = usePathname()
 
   return (
     <div className="mr-4 hidden md:flex">

@@ -53,5 +53,5 @@ export interface NavItem {
   }
   
   export interface CommandMenuProps extends React.HTMLAttributes<HTMLDivElement> {
-    // Add any additional props specific to CommandMenu
+    items?: NavItem[]
   }

@@ -2,14 +2,12 @@
 
 import React from "react";
 import { InfiniteMovingCards } from "@/components/atom/infinite-cards";
-import { Badge } from "@/components/ui/badge";
 import { 
   Star, 
   Users,
   GraduationCap,
   Heart
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import SectionHeading from "../atom/section-heading";
 
 export function Testimonials() {

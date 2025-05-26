@@ -1,4 +1,4 @@
-"use client";import { Button } from "@/components/ui/button";import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";import { Badge } from "@/components/ui/badge";import {   Heart,   Lightbulb,   Shield,   Zap,  BookHeart,  Compass,  Sparkles,  Clock} from "lucide-react";
+"use client";import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";import {   Heart,   Lightbulb,   Shield,   Zap} from "lucide-react";
 import SectionHeading from "../atom/section-heading";
 
 export function About() {

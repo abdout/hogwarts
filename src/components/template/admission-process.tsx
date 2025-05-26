@@ -3,9 +3,6 @@
 import { 
   Sparkles,
   MapPin,
-  Phone,
-  Mail,
-  Clock,
   Users,
   BookOpen
 } from "lucide-react";

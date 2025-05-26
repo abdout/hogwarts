@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { AnimatedButton } from "@/components/atom/animated-button";
-import { GraduationCap } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {

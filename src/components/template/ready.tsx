@@ -1,7 +1,6 @@
 import React from "react";
 import { GradientAnimation } from "@/components/atom/gradient-animation";
 import { Button } from "../ui/button";
-import { AlertTriangle } from "lucide-react";
 
 export function BackgroundGradientAnimationDemo() {
   return (

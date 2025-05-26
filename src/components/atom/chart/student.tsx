@@ -1,7 +1,6 @@
 "use client"
 
 import * as React from "react"
-import { TrendingUp } from "lucide-react"
 import { Label, Pie, PieChart, ResponsiveContainer } from "recharts"
 import { PrismaClient } from "@prisma/client"
 import {
@@ -14,7 +13,6 @@ import {
 } from "@/components/ui/card"
 import {
   ChartConfig,
-  ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart"
@@ -25,14 +23,6 @@ const prisma = new PrismaClient()
 interface StudentPieChartProps {
   boys: number;
   girls: number;
-}
-
-// Type for the groupBy result
-interface GroupByResult {
-  sex: "MALE" | "FEMALE";
-  _count: {
-    sex: number;
-  };
 }
 
 const chartConfig = {

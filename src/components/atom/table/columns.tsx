@@ -12,7 +12,7 @@ interface FieldDefinition<T> {
   cell?: (props: CellContext<T, unknown>) => JSX.Element;
   enableSorting?: boolean;
   enableHiding?: boolean;
-  filterFn?: any;
+  filterFn?: unknown;
 }
 
 interface GenerateColumnOptions {
@@ -21,8 +21,8 @@ interface GenerateColumnOptions {
   showCopy?: boolean;
   showEdit?: boolean;
   showDelete?: boolean;
-  onEdit?: (data: any) => void;
-  onDelete?: (data: any) => void;
+  onEdit?: (data: unknown) => void;
+  onDelete?: (data: unknown) => void;
 }
 
 export function generateColumns<T>(fields: FieldDefinition<T>[]): ColumnDef<T>[] {

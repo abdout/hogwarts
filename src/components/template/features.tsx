@@ -1,14 +1,9 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
-  Wand2, 
-  BookOpenCheck, 
   Users, 
   Trophy, 
-  Globe, 
-  Lightbulb,
   Star,
   Crown
 } from "lucide-react";

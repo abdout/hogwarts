@@ -15,7 +15,7 @@ export const useModal = () => {
 export const ModalProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [modal, setModal] = useState<ModalState>({open: false, id: null});
 
-  const openModal = (id: string | null, data?: any) => {
+  const openModal = (id: string | null, data?: unknown) => {
     setModal({open: true, id: id, data: data});
   };
 
