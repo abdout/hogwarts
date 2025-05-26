@@ -40,7 +40,7 @@ export function Houses() {
       name: "Slytherin School",
       description: "Business & Mathematics",
       longDescription: "Foster determination and strategic reasoning through finance, business studies, and innovation programs.",
-      image: "/slytherin.jpeg",
+      image: "/slytherin.jpg",
       color: "bg-green-600",
       lightColor: "bg-green-50",
       textColor: "text-green-700",
