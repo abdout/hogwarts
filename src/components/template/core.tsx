@@ -45,7 +45,7 @@ export function About() {
              inspired by the timeless virtues of courage, wisdom, loyalty, and ambition, these values guide everything we do at our school." />
 
         {/* Core Values */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-14">
           {coreValues.map((value, index) => (
             <Card key={index} className={`group rounded-md relative border-none shadow-none`}>
                <div className="border-animation border border-muted absolute inset-0 pointer-events-none">

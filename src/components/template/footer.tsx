@@ -5,39 +5,38 @@ import { Button } from '@/components/ui/button';
 
 const Footer = () => {
   return (
-    <footer className=" border-t border-border pt-16 pb-6 bg-muted full-bleed">
+    <footer className="border-t border-border pt-16 pb-6 bg-muted full-bleed">
       <div className='container-responsive'>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           {/* Map Section */}
           <div className="lg:flex-[2] lg:min-w-0">
-            <div className="relative w-[80%] h-53.5 pb-4 overflow-hidden border border-border">
+            <div className="relative w-[75%] aspect-[3/2] mb-4 overflow-hidden">
               <Image 
                 src="/map.jpeg" 
                 alt="Hogwarts Castle Map" 
                 fill
-                className="object-cover"
+                className="object-contain "
+                sizes="(max-width: 768px) 70vw, (max-width: 1200px) 40vw, 33vw"
               />
             </div>
             
             {/* Address & Hours */}
-            <div className="pb-8 pt-3">
+            <div className="pb-4 space-y-2">
               <div>
-                
                 <p className="text-sm text-muted-foreground">
-                  123 Magical Learning Lane, Education City, EC 12345
+                  123 Magical Learning Lane, <br /> Education City, EC 12345
                 </p>
               </div>
-              <div>
-                
-                <p className="text-sm text-muted-foreground pb-4">
+              {/* <div>
+                <p className="text-sm text-muted-foreground">
                   Mon-Fri: 8AM-5PM
                 </p>
-              </div>
+              </div> */}
             </div>
             
-            <Button variant="ghost" asChild className='flex items-end justify-start hover:bg-transparent'>
-              <Link href="/#">
-              <Image src="/z.png" alt="Witch" width={40} height={40} className='-ml-5' />
+            <Button variant="ghost" asChild className='flex items-center justify-start hover:bg-transparent p-0'>
+              <Link href="/#" className="flex items-end">
+                <Image src="/z.png" alt="Witch" width={40} height={40} className='mr-1' />
                 <span className='hover:underline'>Get Directions</span>
               </Link>
             </Button>
@@ -47,37 +46,37 @@ const Footer = () => {
           <div className="lg:flex-[3] grid grid-cols-2 md:flex md:justify-between gap-4 md:gap-0">
             {/* Academics */}
             <div>
-              <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase" style={{ marginBottom: '0.75rem' }}>
+              <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase mb-3">
                 Academics
               </h3>
-              <ul>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/houses" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/houses" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Houses
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/curriculum" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/curriculum" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Curriculum
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/faculty" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/faculty" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Faculty
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/library" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/library" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Library
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/subjects" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/subjects" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Subjects
                   </Link>
                 </li>
                 <li>
-                  <Link href="/exams" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                  <Link href="/exams" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Exams
                   </Link>
                 </li>
@@ -86,32 +85,32 @@ const Footer = () => {
 
             {/* Campus */}
             <div>
-              <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase" style={{ marginBottom: '0.75rem' }}>
+              <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase mb-3">
                 Campus
               </h3>
-              <ul>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/admission" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/admission" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Admissions
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/dormitories" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/dormitories" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Dormitories
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                    <Link href="/great-hall" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/great-hall" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Great Hall
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/quidditch" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/quidditch" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Quidditch
                   </Link>
                 </li>
                 <li>
-                  <Link href="/grounds" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                  <Link href="/grounds" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Grounds
                   </Link>
                 </li>
@@ -120,42 +119,42 @@ const Footer = () => {
 
             {/* Activities */}
             <div>
-              <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase" style={{ marginBottom: '0.75rem' }}>
+              <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase mb-3">
                 Activities
               </h3>
-              <ul>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/clubs" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/clubs" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Clubs
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/events" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/events" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Events
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/sports" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/sports" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Sports
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/competitions" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/competitions" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Competitions
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/tournaments" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/tournaments" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Tournaments
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/ceremonies" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/ceremonies" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Ceremonies
                   </Link>
                 </li>
                 <li>
-                  <Link href="/traditions" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                  <Link href="/traditions" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Traditions
                   </Link>
                 </li>
@@ -164,32 +163,32 @@ const Footer = () => {
 
             {/* Support */}
             <div>
-              <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase" style={{ marginBottom: '0.75rem' }}>
+              <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase mb-3">
                 Support
               </h3>
-              <ul>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/about" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/about" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     About
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/contact" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/contact" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Contact
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/help" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/help" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Help Center
                   </Link>
                 </li>
-                <li style={{ marginBottom: '0.5rem' }}>
-                  <Link href="/alumni" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                <li>
+                  <Link href="/alumni" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Alumni
                   </Link>
                 </li>
                 <li>
-                  <Link href="/careers" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">
+                  <Link href="/careers" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">
                     Careers
                   </Link>
                 </li>
@@ -201,16 +200,16 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-8 pt-6 border-t border-border">
           <div className="flex flex-col md:flex-row items-center">
-            <div className="flex items-center gap-4  ">
-              <div className="flex items-center  gap-3">
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
                 <Image src="/logo.png" alt="Hogwarts Logo" width={32} height={32} className="dark:invert" />
                 <span className="text-lg font-bold text-foreground">Hogwarts</span>
               </div>
-              <Link href="/terms" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">Terms</Link>
-              <Link href="/privacy" className="text-base font-light py-3 text-muted-foreground hover:text-primary transition-colors">Privacy</Link>
+              <Link href="/terms" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">Terms</Link>
+              <Link href="/privacy" className="text-base font-light text-muted-foreground hover:text-primary transition-colors">Privacy</Link>
             </div>
             
-            {/* Social Icons */}
+            {/* Social Icons - Commented out as in original */}
             {/* <div className="flex items-center gap-4 pl-8">
               <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

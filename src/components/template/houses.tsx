@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import SectionHeading from "../atom/section-heading";
 
 export function Houses() {
   const houses = [
@@ -51,15 +52,8 @@ export function Houses() {
     <div className="full-bleed bg-muted">
       <section className="py-14">
         <div className="container-responsive">
-          <div className="text-center mb-16">
-            <h2>
-              Houses
-            </h2>
-            <p>
-
-              Find where your passion belongs.
-            </p>
-          </div>
+          <SectionHeading title="Houses" description="Find where your passion belongs." />
+          
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-10">
             {houses.map((house, index) => (
