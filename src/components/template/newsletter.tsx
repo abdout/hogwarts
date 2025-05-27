@@ -26,7 +26,7 @@ export default function Newsletter() {
           alt="Hogwarts Glasses"
           width={80}
           height={80}
-          className="object-contain -rotate-40"
+          className="object-contain -rotate-32 dark:invert"
         />
       </div>
       
