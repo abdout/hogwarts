@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-// import { SessionProvider } from "next-auth/react";
+import { SessionProvider } from "next-auth/react";
 import { ThemeProvider } from "next-themes";
-// import { auth } from "../../auth";
+import { auth } from "../../auth";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,14 +25,14 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // const session = await auth();
+  const session = await auth();
 
   return (
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* <SessionProvider session={session}> */}
+        <SessionProvider session={session}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -43,7 +43,7 @@ export default async function RootLayout({
               {children}
             </div>
           </ThemeProvider>
-        {/* </SessionProvider> */}
+        </SessionProvider>
       </body>
     </html>
   );

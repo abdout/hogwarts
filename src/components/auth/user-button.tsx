@@ -2,6 +2,7 @@
 
 import { FaUser } from "react-icons/fa";
 import { ExitIcon } from "@radix-ui/react-icons"
+import { useUser, useClerk } from "@clerk/nextjs";
 
 import {
   DropdownMenu,
@@ -15,11 +16,9 @@ import {
   AvatarFallback,
 } from "@/components/ui/avatar";
 
-import { LogoutButton } from "@/components/auth/logout-button";
-import { useCurrentUser } from "./use-current-user";
-
 export const UserButton = () => {
-  const user = useCurrentUser();
+  const { user, isLoaded, isSignedIn } = useUser();
+  const { signOut } = useClerk();
 
   return (
     <DropdownMenu>
