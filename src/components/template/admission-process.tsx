@@ -54,7 +54,7 @@ export function CTA() {
           {/* Simple Timeline Container */}
           <div className="relative mt-8 py-28">
             {/* Timeline line crossing through dots */}
-            <div className="absolute top-1/2 left-0 right-0 transform -translate-y-1/2 h-0.5 bg-gray-300"></div>
+            <div className="absolute top-1/2 left-0 right-0 transform -translate-y-1/2 h-0.5 bg-muted-foreground"></div>
 
             {/* Timeline items */}
             <div className="relative flex justify-between px-24 py-16">
@@ -63,7 +63,7 @@ export function CTA() {
                   {/* Content above timeline (for dots 2 & 4) */}
                   {(index === 1 || index === 3) && (
                     <div className="absolute bottom-12 text-center w-48">
-                      <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                      <h3 className="text-lg font-semibold mb-2">
                         {step.title}
                       </h3>
                       <p >
@@ -75,7 +75,7 @@ export function CTA() {
 
                   {/* Dot crossing the line - positioned at center */}
                   <div 
-                    className="w-10 h-10 rounded-full absolute top-1/2 transform -translate-y-1/2 z-10 overflow-hidden border-2 border-white relative"
+                    className="w-10 h-10 rounded-full relative top-1/2 transform -translate-y-1/2 z-10 overflow-hidden border-2 border-background "
                     style={{
                       '--gradient-background-start': 'rgb(108, 0, 162)',
                       '--gradient-background-end': 'rgb(0, 17, 82)',
@@ -217,7 +217,7 @@ export function CTA() {
                   {/* Content below timeline (for dots 1 & 3) */}
                   {(index === 0 || index === 2) && (
                     <div className="absolute top-12 text-center w-48">
-                      <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                      <h3 className="text-lg font-semibold mb-2">
                       {step.title}
                       </h3>
                       <p >

@@ -13,42 +13,42 @@ import Image from "next/image";
 export function Features() {
   const magicalFeatures = [
     {
-      icon: <Image src="/teleport.png" alt="Magical Learning" width={32} height={32} />,
+      icon: <Image src="/teleport.png" alt="Magical Learning" width={32} height={32} className="dark:invert" />,
       title: "Immersive Learning",
       description: "Interactive and immersive education that transforms traditional learning into an enchanting adventure.",
       color: "text-purple-600",
       bgColor: "bg-purple-50"
     },
     {
-      icon: <Image src="/tent.png" alt="Curriculum" width={32} height={32} />,
+      icon: <Image src="/tent.png" alt="Curriculum" width={32} height={32} className="dark:invert" />,
       title: "Dynamic Programs",
       description: "Carefully crafted programs that blend core academics with creative thinking and real-world applications.",
       color: "text-blue-600",
       bgColor: "bg-blue-50"
     },
     {
-      icon: <Image src="/community.png" alt="Community" width={32} height={32} />,
+      icon: <Image src="/community.png" alt="Community" width={32} height={32} className="dark:invert" />,
       title: "House Community",
       description: "Close-knit learning communities that foster friendship, collaboration, and mutual support among students.",
       color: "text-green-600",
       bgColor: "bg-green-50"
     },
     {
-      icon: <Image src="/champion.png" alt="Champions" width={32} height={32} />,
+      icon: <Image src="/champion.png" alt="Champions" width={32} height={32} className="dark:invert" />,
       title: "Champions League",
       description: "Academic competitions, sports tournaments, and creative challenges that celebrate every student's unique talents.",
       color: "text-yellow-600",
       bgColor: "bg-yellow-50"
     },
     {
-      icon: <Image src="/world.png" alt="World Adventures" width={32} height={32} />,
+      icon: <Image src="/world.png" alt="World Adventures" width={32} height={32} className="dark:invert" />,
       title: "Worldwide Adventures",
       description: "Global exchange programs and virtual international collaborations that expand horizons beyond our castle walls.",
       color: "text-indigo-600",
       bgColor: "bg-indigo-50"
     },
     {
-      icon: <Image src="/light-bulb.png" alt="Innovation" width={32} height={32} />,
+      icon: <Image src="/light-bulb.png" alt="Innovation" width={32} height={32} className="dark:invert" />,
       title: "Innovation Potions",
       description: "STEAM laboratories and maker spaces where students concoct creative solutions to real-world challenges.",
       color: "text-orange-600",
@@ -72,17 +72,17 @@ export function Features() {
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20 pt-10">
           {magicalFeatures.map((feature, index) => (
-            <Card key={index} className="group border border-gray-200 shadow-none rounded-md">
+            <Card key={index} className="shadow-none rounded-md">
               <CardHeader className="text-center flex flex-col items-center">
                 <div className="mb-4">
                   {feature.icon}
                 </div>
-                <CardTitle className="text-xl font-bold text-gray-900 mb-2">
+                <CardTitle className="text-xl font-bold mb-2">
                   {feature.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-0">
-                <CardDescription className="text-gray-600 text-center leading-relaxed">
+                <CardDescription className=" text-center leading-relaxed">
                   {feature.description}
                 </CardDescription>
               </CardContent>

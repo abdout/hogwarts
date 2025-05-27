@@ -66,7 +66,7 @@ export function SpecialOffers() {
                   {offer.icon}
                 </div>
               </div>
-              <CardTitle className="text-xl font-bold text-gray-900 pb-2 mr-14">
+              <CardTitle className="text-xl font-bold pb-2 mr-14">
                 {offer.title}
               </CardTitle>
               <div className="flex justify-center pb-2">
@@ -75,7 +75,7 @@ export function SpecialOffers() {
                 </Badge>
               </div>
               <div className="flex justify-start max-w-[220px]">
-                <CardDescription className="text-gray-600 leading-relaxed">
+                <CardDescription className="leading-relaxed">
                   {offer.description}
                 </CardDescription>
               </div>

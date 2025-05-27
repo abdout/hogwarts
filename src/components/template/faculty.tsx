@@ -77,7 +77,7 @@ export function Faculty() {
         {/* Faculty Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-10 ">
           {facultyStats.map((stat, index) => (
-            <div key={index} className="rounded-md p-6 text-center border border-gray-200">
+            <div key={index} className="rounded-md p-6 text-center border border-card-border">
               <div className="flex justify-center mb-3">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <div className="text-primary">
@@ -85,10 +85,10 @@ export function Faculty() {
                   </div>
                 </div>
               </div>
-              <div className="text-2xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl font-bold mb-1">
                 {stat.value}
               </div>
-              <div className="text-sm text-gray-600">
+              <div className="text-sm">
                 {stat.label}
               </div>
             </div>
@@ -148,11 +148,11 @@ export function Faculty() {
                       {/* Stats */}
                       <div className="">
                         <div>
-                          <span className="text-xs font-semibold text-gray-800">{professor.experience}</span>
+                          <span className="text-xs font-semibold">{professor.experience}</span>
                         </div>
                         
                         <div>
-                          <span className="text-xs font-semibold text-gray-800">{professor.education}</span>
+                          <span className="text-xs font-semibold">{professor.education}</span>
                         </div>
                       </div>
                     </div>

@@ -24,7 +24,7 @@ export function MainNav({ items, children }: MainNavProps) {
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="hidden items-center gap-2 md:flex">
         <Image src="/logo.png" alt="Hogwarts Logo" width={20} height={20} className="dark:invert" />
-        <span className="hidden font-bold sm:inline-block ">
+        <span className="hidden font-bold sm:inline-block  ">
           {siteConfig.name}
         </span>
       </Link>

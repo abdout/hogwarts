@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import SectionHeading from "../atom/section-heading";
+import Link from "next/link";
 
 export function Houses() {
   const houses = [
@@ -73,7 +74,7 @@ export function Houses() {
                   <h3 className={`font-semibold text-lg ${house.textColor}`}>
                     {house.description}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-sm leading-relaxed">
                     {house.longDescription}
                   </p>
                 </div>
@@ -82,16 +83,13 @@ export function Houses() {
           </div>
 
           <div className="text-center pt-12">
-            <Button variant="ghost" size="lg">
-              <Image
-                src="/hat.png"
-                alt="Sorting Hat"
-                width={20}
-                height={20}
-                className="object-contain"
-              />
-              Take Sorting Quiz
+          <Button variant="ghost" asChild className='flex items-end justify-center hover:bg-transparent hover:underline p-0'>
+              <Link href="/#" className="flex ">
+                <Image src="/hat.png" alt="Witch" width={40} height={40} className="dark:invert mr-1"/>
+                Take Sorting Quiz
+              </Link>
             </Button>
+            
 
           </div>
         </div>

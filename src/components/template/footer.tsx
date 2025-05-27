@@ -34,10 +34,10 @@ const Footer = () => {
               </div> */}
             </div>
             
-            <Button variant="ghost" asChild className='flex items-center justify-start hover:bg-transparent p-0'>
+            <Button variant="ghost" asChild className='flex items-center justify-start hover:bg-transparent hover:underline p-0'>
               <Link href="/#" className="flex items-end">
-                <Image src="/z.png" alt="Witch" width={40} height={40} className='mr-1' />
-                <span className='hover:underline'>Get Directions</span>
+                <Image src="/z.png" alt="Witch" width={40} height={40} className="dark:invert"/>
+                Get Directions
               </Link>
             </Button>
           </div>

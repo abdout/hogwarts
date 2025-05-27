@@ -28,7 +28,7 @@ export function Testimonials() {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-14">
           {stats.map((stat, index) => (
-            <div key={index} className="rounded-md p-6 text-center border border-gray-200">
+            <div key={index} className="rounded-md p-6 text-center border border-card-border">
               <div className="flex justify-center pb-3">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <div className="text-primary">
@@ -36,10 +36,10 @@ export function Testimonials() {
                   </div>
                 </div>
               </div>
-              <div className="text-2xl font-bold text-gray-900 pb-1">
+              <div className="text-2xl font-bold pb-1">
                 {stat.value}
               </div>
-              <div className="text-sm text-gray-600">
+              <div className="text-sm">
                 {stat.label}
               </div>
             </div>

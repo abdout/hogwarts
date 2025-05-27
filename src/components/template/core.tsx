@@ -63,12 +63,12 @@ export function About() {
                     </div>
                   </div>
                 </div>
-                <CardTitle className="text-xl font-bold text-gray-900">
+                <CardTitle className="text-xl font-bold">
                   {value.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-0">
-                <CardDescription className="text-gray-600 text-center leading-relaxed">
+                <CardDescription className="text-center leading-relaxed">
                   {value.description}
                 </CardDescription>
               </CardContent>

@@ -8,7 +8,7 @@ export default function LetsWorkTogether() {
    
   
       <div className="py-20">
-        <h2 className="font-bold">Join the Community</h2>
+        <h2 className="font-bold pb-2">Join the Community</h2>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-14 ">
           <div className="flex-1">
             <p>
