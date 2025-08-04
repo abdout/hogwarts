@@ -1,12 +1,11 @@
-import { buttonVariants } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
-import Link from 'next/link'
 import React from 'react'
 import { MainNav } from './main-nav'
 import { marketingConfig } from './constant'
-import { ModeSwitcher } from './mode-switcher'
+import { auth } from "@/auth"
+import { RightActions } from './right-actions'
 
-export default function SiteHeader() {
+export default async function SiteHeader() {
+  const session = await auth();
     return (
       <header className="sticky top-0 z-40 border-b border-dashed border-muted bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" style={{
         width: '100vw',
@@ -18,19 +17,8 @@ export default function SiteHeader() {
             {/* Left side - Logo and Nav */}
             <MainNav items={marketingConfig.mainNav} />
             
-            {/* Right side - Login and Theme toggle */}
-            <div className="flex items-center gap-2">
-              <Link
-                href="/login"
-                className={cn(
-                  buttonVariants({ variant: "secondary", size: "sm" }),
-                  "px-4 text-xs"
-                )}
-              >
-                Login
-              </Link>
-              <ModeSwitcher />
-            </div>
+            {/* Right side - Login/Logout and Theme toggle */}
+            <RightActions isAuthenticated={!!session?.user} />
           </div>
         </div>
       </header>
